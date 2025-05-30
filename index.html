@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Internship Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CodAlpha Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="C:\code alpha\ImageGalleryProject\ImageGalleryProject\images\beach.jpeg" alt="Beach" onclick="openPreview(0)">
+    <img src="C:\code alpha\ImageGalleryProject\ImageGalleryProject\images\forest.jpeg" alt="Mountains" onclick="openPreview(1)">
+    <img src="C:\code alpha\ImageGalleryProject\ImageGalleryProject\images\forest.jpeg" alt="Forest" onclick="openPreview(2)">
+    <img src="C:\code alpha\ImageGalleryProject\ImageGalleryProject\images\city.jpeg" alt="City" onclick="openPreview(3)">
+  </div>
+
+  <div id="previewModal" class="modal">
+    <span class="close" onclick="closePreview()">&times;</span>
+    <img id="previewImage" class="modal-content">
+    <p id="caption" class="caption"></p>
+    <div class="nav">
+      <button onclick="prevImage()">Prev</button>
+      <button onclick="nextImage()">Next</button>
+      <button onclick="toggleSlideshow()">Play/Pause</button>
+    </div>
+  </div>
+<h1>made by : Babul kumar </h1>
+  <script src="script.js"></script>
+</body>
+</html>
